@@ -1,0 +1,4 @@
+pan
+fruta
+verduras
+galletitas
