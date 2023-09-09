@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulo 1 Unidad 3</title>
+</head>
+
+<body>
+    <!--comentario en HTML - se utiliza una etiqueta h1 por html-->
+    <h1>Encabezado 1</h1>
+    <h2>Encabezado 2</h2>
+    <h3>Encabezado 3</h3>
+    <h4>Encabezado 4</h4>
+    <!--<h5>Encabezado 5</h5>-->
+    <h6>Encabezado 6</h6>
+    <h2>La Empresa</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quisquam explicabo temporibus. 
+    Repellat aliquam quasi accusamus voluptas! Quam deserunt officiis voluptas nemo libero dolore nisi, 
+    eum eos. Nam, magni! Odit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsa libero repellendus incidunt 
+    ipsum cupiditate facilis praesentium exercitationem illo atque sint amet, numquam doloremque 
+    sapiente doloribus. Vel accusamus facilis fuga!</p>
+    <h2>Objetivos</h2>
+    <!--ul lista desordenada-->
+    <ul>
+        <li>metas</li>
+        <li>metas 2</li>
+        <li>Metas 3</li>
+    </ul>
+    <!--ol lista ordenada-->
+    <ol>
+        <li>Boca</li>
+        <li>River</li>
+        <li>San Lorenzo</li>
+    </ol>
+    <!--Hacemos una vinculacion. La palabra AQUI va a estar marcada, marcada con una etiqueta que
+    genera la vinculacion, agrego la tiqueta "a" que da la vinculacion con el atributo href, es donde
+    quiero que me redireccione, siempre con https. Para abrir en ventana nueva, hay que colocar el
+    target: nueva pestana es _blank -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, cum consequatur. Cumque quibusdam 
+    recusandae beatae consectetur molestias, totam eveniet a, eos cupiditate amet perferendis reiciendis,
+    magnam explicabo soluta sed dolor.SI DESEA MAS INFO HAGA CLICK <a href="https://www.google.com.ar/" 
+    target="_blank">AQUI</a></p>
+
+    <!--la etiqueta svg es lo que trabaja vectorial, por ej una imagen de corazon, va haciendo punto
+    por punto-->
+    <svg width="200" height="200">
+        <circle cx="25" r="80" stroke="green" stroke-width="10" fill="red"/>
+    </svg>
+
+    <!--ETIQUETAS DE FORMULARIO-->
+    <h2>Complete el siguiente formulario</h2>
+    <form action="">
+        <label for="">Nombre</label>
+        <input type="text">
+        <label for="">Contraseña</label>
+        <input type="password">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Trabajamos con imagenes</h2>
+    <!--tiene dos atributos. src es el origen para poder llamar a la imagen y el alt es el texto
+    alternativo. Si la imagen esta al mismo nivel que el html coloco el nombre y ya me lo toma el 
+    codigo. El alt sirve para posicionar las imagenes, sirve para descripcion de la imagen, sirve para 
+    dificultad visual, ayuda para ver de que se trata-->
+    <img src="dipper.jpg" alt="dipper">
+
+    <!--Vinculamos ahora una imagen que esta dentro de una carpeta, es decir, no esta al nivel del
+    html. Si coloco la ruta de mi maquina, esta mal, porque solo aparece en nuestra computadora. ES 
+    IMPORTANTE LA RUTA!-->
+    <img src="img/casa.jpg" alt="casa">
+    
+</body>
+
+</html>
