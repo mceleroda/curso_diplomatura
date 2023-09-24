@@ -1,0 +1,47 @@
+/* font-family: 'Handlee', cursive;
+font-family: 'Wellfleet', serif; */
+
+.caja{
+    /* background-color: yellow; */
+    width: 300px;
+    padding: 20px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle,
+    rgba(63,94,251,1) 0%, rgba(240,49,88,1) 
+    100%);
+    box-shadow: 10px 20px 25px black;
+    /* primer parametro es el eje X, luego eje Y
+    y el desenfoque, blur color, es la nitidez que
+    tenga ese borde, mas grande, mas desenfocado. 
+    Podemos ponerlo positivo o negativo, positivo
+    para derecha y para abajo */
+    border-radius: 25px;
+    border-radius: 50px 25px;
+    border-radius: 10px 20px 30px;
+    border-radius: 10px 20px 30px 40px;
+    /* estos son los bordes redondeados. Puedo
+    poner de 1 a 4 parametros. Si pongo uno todos
+    los bordes van a ser iguales. Si pongo dos 
+    las diagonales son iguales, etc*/
+}
+
+.texto{
+    margin-top: 20px;
+    background-color: yellow;
+    column-count: 4; /*cantidad de columnas del texto*/
+    column-gap: 30px; /*cantidad de espacio de columnas*/
+    column-rule: 2px solid black; /*linea de separacion
+    de columnas*/
+}
+
+.texto p{
+    margin: 0;
+    font-family: 'Handlee', cursive;
+    font-size: 13px;
+}
+
+h2{
+    font-family: 'Wellfleet', serif;
+    color: red; 
+}
+
