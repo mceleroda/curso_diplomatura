@@ -1,0 +1,40 @@
+h1{ /*esto es una regla, en total en este archivo hay 6 reglas*/
+    /*comentario en CSS*/
+    color: red; /*color en las letras*/
+    background-color: yellow; /*color de fondo*/    
+}
+
+h2{
+    color: blue;
+    text-transform: uppercase; /*texto transformado todo en mayuscula*/
+    text-align: center; /*alineacion de texto*/
+}
+
+p{/*la lectura es hacia abajo, siempre queda el ultimo color que aparece*/
+    color: green;
+    color: rgb(84, 150, 105);
+    line-height: 25px; /*alto de linea, por defecto el tamano es 16*/
+}
+
+.destacados {
+    font-weight: bold; /*le agrego negrito solo a los parrafos que tengan clase destacados*/
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#rojo{
+    width: 250px;
+    /* height: 250px; */
+    background-color: lightcoral;
+    border: 5px dotted blueviolet; /*solido es solid o con puntos dotted*/
+    padding: 25px;/*margen interior que separa el texto del borde, borde hacia el contenido, borde hacia
+    adentro*/    
+    box-sizing: border-box;
+    margin-left: 150px; /* margen, desde el documento, es decir, desde de la etiqueta body o si tuviera 
+    varias cajas, desde la caja que tengo al lado, la que declare anteriormente*/
+}
+
+#rojo p{
+    color: black;
+}
+
