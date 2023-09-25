@@ -1,0 +1,19 @@
+.destacados{
+    background-color: aqua;
+    border: 10px solid green;
+    padding: 15px;
+}
+
+
+h2{
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+label{
+    color: blue;
+    text-transform: uppercase;
+    font-family: 'Handlee', cursive;
+}
+
