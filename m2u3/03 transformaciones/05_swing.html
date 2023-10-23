@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style type="text/css">
+/*
+    La regla arroba @keyframes permite a los autores controlar los pasos 
+	intermedios en una secuencia de animación CSS mediante el establecimiento
+	de keyframes (o puntos de trayectoria) */
+        
+        .swing
+        {
+             margin:120px 150px;
+            
+             width:500px;
+            height:300px;
+            
+            background:#676470;
+            color:#fff;
+            
+            font-family:arial;
+            font-weight:900;
+            font-size:3.4em;
+            
+            text-align:center;
+             line-height:300px;
+            
+            transition:all 0.3s ease;
+            }
+
+      /*  Para obtener una lista de keyframe que sea válida, debe incluir 
+	  reglas para al menos los tiempos  0% (o desde) y 100% (o hacia)
+	  (o sea, los estados inicial y final de la animación).*/
+        
+         
+        @keyframes swing
+        {
+            15% { 
+                transform: translateX(5px);
+                background-color: yellow;
+            }
+            
+            30% { 
+                transform: translateX(-5px); 
+                background-color:orange;
+            }
+            
+            50% { 
+                transform: translateX(3px) rotate(90deg); /*puedo agregar las propiedades que quiera
+                 que haga  */
+                background-color: green;
+            }
+            
+            65% { 
+                transform: translateX(-3px); 
+                background-color:blue;
+            }
+            
+            80% { 
+                transform: translateX(2px); 
+                background-color:red;
+            }
+            
+            100% { 
+                transform: translateX(0); 
+                background-color:violet;
+            }
+        }
+        /* tengo una animacion de 1s y coloco dentro del 100% en que momento quiero que haga
+        ese cambio. en este caso cambia al 15% se traslada a la derecha 5px, al 30% a la izq 5px, etc */
+        .swing:hover
+        {
+          animation: swing 1s ease; /* puedo cambiar el tiempo para que tarde mas el cambio */
+          animation-iteration-count: 5; /* lo hace hasta 5 veces y dsp corta. O se puede poner de
+          manera infinita quedaria animatios-iteration-count= infinite */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="swing">Swing</div>
+    
+</body>
+</html>
