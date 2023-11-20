@@ -1,39 +1,43 @@
-@media (max-width= 800px) {
-
-
+@media only screen and (max-width: 800px) {
 body {
 	color: #000;
 	background: #332F29;
 	font-size:100%;
 }
 #contenedor {
-	width: 800px;
+	width: 100%;
 	background: #8FA68E;
 	margin-right:auto;
 	margin-left:auto;
-	overflow: hidden;
+	overflow: auto;
 }
 nav {
-	background: burlywood;
-	float: left;
-	width: 160px;
+	background: rgb(207, 154, 84);
+	/* float: auto; */
+	width: 100%;
 }
 ul {
 	list-style-type:none;
+	line-height: 30px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	
 }
 a {
-	color:#F1F2C0;
+	color:black;
 	text-decoration: none;
+	/* font-family: 'Times New Roman', Times, serif; */
 }
 section {
 	background: #F1F2C0;
-	float: left;
-	margin: 0 0 0 25px;
-	width: 400px;
+	/* float: auto; */
+	margin: 0;
+	width: 100%;
+	border-color: black;
 }
 aside {
 	background: #CCC59E;
-	float: right;
-	width: 190px;
+	/* float: auto; */
+	width: 100%;
 }
 }
