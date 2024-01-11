@@ -7,14 +7,28 @@
 
     <body>
         <script>
-        const nombre = "Juan";
+        /*cada nombre de variable es unico*/
+        /*las variables se declaran con const constante o let que puede ser global o local, y se
+        puede reasignar y siempre queda el ultimo
+        let nombre = 'Juan'
+        nombre = 'Flavia'
+        
+        los datos de estas variables son estaticos*/
+        const nombre = "Juan"; 
         const edad = 10;
         const altura = 1.53;
-        const casado = false;
+        const casado = false; /*valor buleano V o F*/
 
-        document.write(nombre);
-        console.log(nombre);
+        document.write(nombre); /*imprime sobre el documento. Entre parentesis va el nombre de la variables
+        que se creo arriba*/
+
+        console.log(nombre); /*imprime sobre la consola*/
+
         console.log(`Mi nombre es ${nombre}. Tengo  ${edad} años, tengo una estatura de ${altura}`)
-        </script>
+        /*las comillas inclinadas o inglesas, con esto hago una interpolacion de string
+        estoy uniendo info con la info de la variable. con la info de la variable coloco $ y las 
+        llaves*/ 
+        </script> 
+        
     </body>
 </html>
