@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 800px) {
 body {
 	color: #000;
@@ -33,11 +34,22 @@ section {
 	/* float: auto; */
 	margin: 0;
 	width: 100%;
-	border-color: black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+
+
 }
 aside {
 	background: #CCC59E;
 	/* float: auto; */
 	width: 100%;
+}
+
+h2 {
+	padding-left: 10px;
+}
+
+p {
+	padding-left: 10px;
 }
 }
