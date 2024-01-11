@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+
+<body>
+	<script>
+		const frutas = ["Manzana", "Banana", "Pera", "Sandia"];
+		//por indice empiezo nombrando los elementos del array (vector) desde cero (0). Entonces manzana
+		//manzana va a ser 0, banana 1, pera 2, sandia 3 
+		console.log(frutas); // 2
+
+		console.log(frutas.length); //4
+		
+		
+		//const primero = frutas[0]; //manzana
+
+		//console.log(primero)
+
+		const primero = frutas[1]; //banana
+
+		console.log(primero)
+		
+		//si quiero saber el ultimo sería 4-1 = 3 que sería Sandía
+
+		const ultimo = frutas[frutas.length-1]; // siempre es el ultimo
+
+		console.log(ultimo)
+
+		const vegetales = ['Repollo', 'Nabo', 'Rábano', 'Zanahoria'];
+		
+		console.log(vegetales);  // ["Repollo", "Nabo", "Rábano", "Zanahoria"]
+		
+		let seleccionado = 2; //me imprime de los vegetales el seleccionado en posicion 2, rabano.
+		console.log(vegetales[seleccionado]);
+		
+		seleccionado = 1; //como estoy reasignando tengo que generarla como let
+		console.log(vegetales[seleccionado]); //aca me imprime Nabo
+		
+		for( let i = 0; i < vegetales.length; i++){
+			console.log('tenemos ' + vegetales[i])
+		}
+		
+		//for para recorrer, es un bucle. Valor inicial let i, valor tope y lo que se va moviendo.
+		//en la tarea tendriamos que saber cual es el número mayor, hay que hacer que el numero mas grande se guarde en una variable mayor, que tiene que ver con las estructuras de control. 
+		
+
+	</script>
+
+</body>
+</html>
