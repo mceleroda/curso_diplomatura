@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio 1</title>
 </head>
 
 <body>
     <script>
-        const distancia = parseInt(prompt('Ingrese la distancia a recorrer:', ''))
-
-        if (distancia >= 0 && distancia <=1000) { // || OR
+        const distancia = parseInt(prompt('Ingrese la distancia a recorrer en metros:', ''))
+        
+        if (Number.isNaN(distancia)) {
+			document.write('La distancia ingresada no es válida. Debe ingresar numeros.');
+        } else if (distancia >= 0 && distancia <=1000) {
             document.write('El medio de transporte apropiado es a pie.');
         } else if (distancia >1000 && distancia <=10000) {
             document.write('El medio de transporte apropiado es en bicicleta.');
@@ -21,7 +23,7 @@
             document.write('El medio de transporte apropiado es en auto.');
         } else if (distancia >100000) {
             document.write('El medio de transporte apropiado es en avion.');
-        }
+        } 
     </script>
 </body>
 
