@@ -1,0 +1,37 @@
+Javascrip
+lenguaje de programación para crear páginas web dinámicas
+podemos incorporar efectos, acordeón. 
+
+Como lo podemos incluir? 
+-en el mismo documento
+-desde un archivo externo
+
+html, css y js separados 
+el js se linkea
+dentro de la etiqueta de head
+o antes de que cierre la etiqueta de body
+porque crga la pagina y dsp tenemos la interacción de js
+
+Caract basicas
+-no se tienen en cuenta los espacios en blanco, se pueden generar concatenando la info de una variable
+con la info del texto que yo quiero que se imprima. O generando colocando alguna etiqueta para generar los
+espacios. 
+podemos utilizar interpolacion de strings.
+-se distinguen el uso de mayusculas y minusculas, si yo genero una variable con N y en el codigo le 
+pongo n, es distinto.
+-no se define el tipo de dato de las variables.
+-no es necesario terminar con punto y coma ;
+-se pueden incluir comentarios
+
+variables
+para que sirven? almacena una información que esta dada o no o hacer referencia a otro valor. 
+
+tipos de variables
+-numericas: entero o decimal (separación con puntos)
+-cadenas de texto: se pueden usar comillas, comillas dobles. 
+-arrays: vectores, colección de variables.  
+-estructuras de control: estructura de if, else, while, switch.
+-operador ternario ante una condicion
+-bucles: estructura de for, inicializacion, condicion, actualizacion. estructura de while 
+
+
