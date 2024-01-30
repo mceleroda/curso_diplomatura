@@ -24,17 +24,6 @@ header h1 {
     margin-left: 10px;
 }
 
-header h3 {
-    color: white;
-    font-size: 20px;
-    font-weight: 100;
-    font-style: italic;
-    display: inline-block;
-    position: relative; /*ej de posicionamiento pero se puede armar con cajas flexibles*/
-    bottom: 10px;
-    margin-left: 10px;
-}
-
 nav {
     background-color: #97233c;
     margin-bottom: 20px;
