@@ -13,6 +13,7 @@ import {
 const nombre2 = "Pablo";
 
 const lista = ['manzanas', 'bananas', 'peras', 'uvas'];
+
 const mostrarValor = valor => {
   console.log(valor);
 };
