@@ -4,7 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var session = require('express-session');
+require('dotenv').config();
+var pool = require('./models/bd')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -21,38 +22,42 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(session({
-  secret: 'skdlfkdglfdgdkfljsdlkfjkldsf',
-  resave: false,
-  saveUninitialized: true
-}));
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
 
-// app.use('/', indexRouter);
-// app.use('/users', usersRouter);
+//select
+// pool.query('select * from empleados').then(function (resultados) {
+//   console.log(resultados)
+// });
 
-app.get('/', function (req,res) {
-  var conocido = Boolean(req.session.nombre);
+var obj = {
+  nombre: 'Juan',
+  apellido: 'Lopez',
+  trabajo: 'docente',
+  edad: 38,
+  salario: 1500,
+  mail: 'juanlopez@gmail.com'
+}
 
-  res.render('index', {
-    title: 'Sesiones en Express.js',
-    conocido: conocido,
-    nombre: req.session.nombre
-  });
+pool.query('insert into empleados set ?', [obj]).then(function (resultados) {
+  console.log(resultados)
 });
 
-app.post('/ingresar', function (req, res)
-{
-  // var nombre = req.body.nombre;
-  // console.log(nombre)
-  if (req.body.nombre) {
-    req.session.nombre = req.body.nombre
-  }
-  res.redirect('/');
+//update
+var id = 1
+var obj = {
+  nombre: 'Pablo',
+  apellido: 'Gomez'
+}
+
+pool.query('update empleados set ? where id_emp=?', [obj,id]).then(function (resultados) {
+  console.log(resultados)
 });
 
-app.get('/salir', function (req, res) {
-  req.session.destroy();
-  res.redirect('/');
+//delete
+var id = 24
+pool.query('delete from empleados where id_emp=?', [id]).then(function (resultados) {
+  console.log(resultados)
 });
 
 // catch 404 and forward to error handler
