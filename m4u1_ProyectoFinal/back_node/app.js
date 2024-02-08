@@ -5,11 +5,13 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 require('dotenv').config();
-var pool = require('./models/bd')
+var pool = require('./models/bd');
+var session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var loginRouter = require('./routes/admin/login')
+var loginRouter = require('./routes/admin/login');
+var adminRouter = require('./routes/admin/novedades');
 
 var app = express();
 
@@ -23,9 +25,32 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+app.use(session ({
+  secret: 'PW2021awqyeudj',
+  cookie: { maxAge: null },
+  resave: false,
+  saveUnintialized: true
+}));
+
+
+secured = async (req, res, next) => {
+  try {
+    console.log(req.session.id_usuario);
+    if(req.session.id_usuario) {
+      next();
+    } else {
+      res.redirect('/admin/login');
+    } //cierro else
+  } catch (error) {
+    console.log(error);
+  } //cierro catch error
+}; //cierro secured
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', secured, adminRouter);
 
 // select
 pool.query('select * from precios').then(function (resultados) {
