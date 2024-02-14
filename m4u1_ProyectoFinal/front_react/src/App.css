@@ -9,7 +9,7 @@ body {
   margin: 0 auto;
 }
 
-h2 {
+.holder h2 {
   color: #97233c;
   font-weight: 400;
 }

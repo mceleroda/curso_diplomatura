@@ -1,17 +1,22 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col'
 
 const PreciosItem = (props) => {
-    const { producto, tipo_producto, precio, tipo_precio, imagen } = props;
+    const { producto, precio, tipo_precio, imagen } = props;
 
     return (
-        <div className="precios">
-            <h3>{producto}</h3>
-            <p>{tipo_producto}</p>
-            <p>{precio}</p>
-            <p>{tipo_precio}</p>
-            <img src={imagen} alt=''/>
-            <hr/>
-        </div>
+        <Col>
+            <Card className='card-precio' style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={imagen} />
+                <Card.Body>
+                    <Card.Title>{producto}</Card.Title>
+                    <Card.Text>
+                        ${precio} - {tipo_precio}
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+        </Col>
     );
 }
 

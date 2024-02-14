@@ -3,6 +3,8 @@ import '../App.css';
 import axios from 'axios';
 import PreciosItem from "../components/precios/PreciosItem";
 import '../styles/components/pages/PreciosPage.css'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 const PreciosPage = (props) => {
 
@@ -26,10 +28,18 @@ const PreciosPage = (props) => {
             {loading ? (
                 <p>Cargando...</p>
             ) : (
-                precios.map(item => 
-                <PreciosItem key={item.id_producto}
-                    imagen={item.imagen} producto={item.producto}
-                    precio={item.precio} tipo_precio={item.tipo_precio}/>)
+                <Container>
+                    <Row>
+                        {
+                            precios.map(
+                                item =>
+                                    <PreciosItem key={item.id_producto}
+                                        imagen={item.imagen} producto={item.producto}
+                                        precio={item.precio} tipo_precio={item.tipo_precio} />
+                            )
+                        }
+                    </Row>
+                </Container>
             )}
         </section>
     );
