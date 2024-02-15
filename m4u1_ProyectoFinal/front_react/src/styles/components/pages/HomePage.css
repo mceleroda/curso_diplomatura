@@ -26,13 +26,13 @@
 .testimonio .cita {
     font-weight: bold;
     font-style: italic;
-    font-size: 22px;
+    font-size: 20px;
     /* background-color: yellow; */
     display: block;
 }
 
 .testimonio .autor {
-    font-size: 10px;
+    font-size: 15px;
     text-align: center;
     /* background-color: lightcoral; */
     display: block;

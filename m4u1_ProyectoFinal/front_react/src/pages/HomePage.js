@@ -26,7 +26,7 @@ const HomePage = (props) => {
                 <div className="testimonios">
                     <h2>Testimonios</h2>
                     <div className="testimonio">
-                        <span className="cita">Súper recomendado. No se pueden perder ni lo dulce ni lo salado. Vayan a hacer su pedido.</span>
+                        <span className="cita">Súper recomendado. No se pueden perder ni lo dulce ni lo salado. Vayan a hacer su pedido!</span>
                         <span className="autor">Rosana Rodríguez</span>
                     </div>
 

@@ -6,7 +6,7 @@ const Footer = (props) => {
 
     return(
         <footer>
-            <p>Derechos reservados. Lo de Valentino Monte Grande - año 2024</p>
+            <p>Derechos reservados. María Celeste Roda - año 2024</p>
         </footer>
     )
 } 
